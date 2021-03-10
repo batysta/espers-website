@@ -1,5 +1,5 @@
-addnode=peer1.esprs.io
-addnode=peer2.esprs.io
+addnode=peer1.espers.io
+addnode=peer2.espers.io
 addnode=188.166.6.33:22448
 addnode=46.101.23.159:22448
 addnode=95.217.78.79:22448
