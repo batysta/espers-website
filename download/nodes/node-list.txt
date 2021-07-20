@@ -13,3 +13,4 @@ addnode=172.105.99.224:22448
 addnode=172.105.99.22:22448
 addnode=172.104.240.25:22448
 addnode=172.104.245.94:22448
+addnode=espers.merp.nl
