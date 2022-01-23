@@ -256,12 +256,14 @@ section {
   .buttons-download .download {
     background-color: #42A5F5;
     color: #fff;
+    width: 45%;
     text-decoration: none;
     display: inline-block;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     padding: 12px 20px;
     margin-right: 5px;
+    margin-bottom : 10px
     text-align: left;
     -webkit-transition: all ease .50s;
     transition: all ease .50s; }
