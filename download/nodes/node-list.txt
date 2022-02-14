@@ -4,7 +4,3 @@ addnode=n3.espers.io
 addnode=n4.espers.io
 addnode=n5.espers.io
 addnode=n6.espers.io
-addnode=n7.espers.io
-addnode=n8.espers.io
-addnode=n9.espers.io
-addnode=n10.espers.io
