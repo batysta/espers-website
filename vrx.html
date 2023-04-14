@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<!--
+	Espers 
+	html5up.net | @ajlkn
+	espers.io   | @CryptoCoderz
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VRX - Espers </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Resources</a>
+									<ul>
+										<li>
+											<a href="#">Getting Started</a>
+											<ul>
+												<li><a href="setup.html">Install a Client</a></li>
+												<li><a href="mining.html">Mining coins</a></li>
+												<li><a href="buying.html">Buying coins</a></li>
+												<li><a href="webwallet.html">Web Client</a></li>
+												<li><a href="https://explorer.espers.io/">Block Explorer 1</a></li>
+												<li><a href="https://explorer2.espers.io/">Block Explorer 2</a></li>
+												<li><a href="https://espers.io/download/nodes/node-list.txt">Node list</a></li>
+											</ul>
+										</li>
+										<li><a href="https://github.com/cryptocoderz/espers">Official GitHub</a></li>
+										<li>
+											<a href="#">Exchanges</a>
+											<ul>
+												<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH">Vindax (ESP/ETH)</a></li>
+												<li><a href="https://xeggex.com/market/ESP_USDT">Xeggex (ESP/USDT)</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Pitch-Deck</a>
+											<ul>
+												<li><a href="pdfs/Espers_Pitch_Deck_02182023.pdf">English</a></li>
+												<!-- <li><a href="https://espers.io/download/Espers-Whitepaper-Russian.pdf">Pусский</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Portugues.pdf">Português</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-French.pdf">Français</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Hindi.pdf">हिन्दी</a></li> -->
+											</ul>
+										</li>
+										<li><a href="features.html">Features</a></li>
+										<li><a href="roadmap.html">Roadmap</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Community</a>
+									<ul>
+										<li><a href="https://twitter.com/EspersCoin">Twitter</a></li>
+										<li><a href="https://discord.gg/hhYP8yT">Discord</a></li>
+										<li><a href="https://www.facebook.com/EspersOfficial">Facebook</a></li>
+										<li><a href="https://bitcointalk.org/index.php?topic=1434700.0">Bitcointalk</a></li>
+										<li><a href="https://t.me/EspersCoin">Telegram</a></li>
+										<li><a href="https://www.reddit.com/r/esperscoin">Reddit</a></li>
+										<li><a href="https://www.youtube.com/channel/UCeeQhMjnCKXGQAaKSOJFjng">Youtube</a></li>
+										<li><a href="https://github.com/cryptocoderz/espers">Github</a></li>
+									</ul>
+								</li>
+								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li> -->
+								<li><a href="news.html">News</a></li>
+								<li><a href="https://blog.espers.io/">Dev-Blog</a></li>
+								<li><a href="donations.html">Donations</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">VRX</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>VRX block difficulty retarget</h2>
+										<p>Scroll down for more information</p>
+									</header>
+									<a href="#" class="image featured">
+										<img src="images/pic01.png" alt="" />
+									</a>
+									<h3>Introduction</h3>
+									<p>VRX or Terminal Velocity RateX is a blockchain difficulty retarget system that, using a several block depth scan, quickly adapts any implemented blockchain/altcoin's mining or staking difficulty levels to ensure a narrow window around the desired block time. Allowing of course for some inconsistencies in block spacing due to significant increases or decreases in hashrate/staking depending on whether the blockchain is Proof-Of-Work based, Proof-OfStake or Hybrid. The VRX system ensures that blocks are generated at a consistently even pace. Furthermore, for Hybrid blockchains the blocks are properly shuffled in a 50/50 ratio allowing both consensus types an even chance. Now as of early 2020 this system has been updated with a sophisticated anti-stall functionality, preventing the possibility of the chain from ever becoming "stuck". These features have yet to be seen in any sort of capacity anywhere else but the VRX implementation that this document describes.</p>
+
+									<h3>Technical Aspects</h3>
+									<p>Simply put VRX indexes a previous set amount of blocks (typical reference implementations are set to the previous six blocks) and then compares each of them against one another in relation to their block times in order to determine a set spacing between each sets of indexed block pairs. The system then takes the determined block spacing and compares it against desired block spacing in what is called a "Check Round". Check Rounds are similar to what can be found in other retarget systems that are available, however, VRX adjusts on a unique curve which adapts quickly to large changes in the hashrate of the blockchain, making sure to not adjust too much at the same time so as not to "stall" the blockchain. There is one Check Round per pair of blocks indexed so in most cases as stated previously using a six block count index depth VRX will have five Check Rounds. After VRX runs through its checks the system then determines whether it should change the difficulty either up or down depending on whether the desired block time was overshot or rushed. The severity of which direction the system adjusts is limited to a maximum of doubling the previous block difficulty or halving it. Finally an average is calculated between the different pair calculated difficulty changes so that the most logical change in difficulty occurs that best suites the blockchain and submitted for the mining/minting network.</p>
+
+									<h3>Improvements</h3>
+									<p>Over the course of the past several years VRX has undergone some significant evolution. In 2019 it was updated with its first set of advanced functions such as Hybrid (PoW/PoS) Swing which skews the difficulty towards whichever concensus algorithm is being found less. This is rated on a curve depending on severity of elapsed spacing since the other type of consensus algorithm has been able to submit a valid block to the network. By having this feature constricted with its curve values allows for a practically perfect 50/50 shuffle of block types between PoW and PoS with hybrid systems. Additionally by excluding this feature and constricting the window parameters more tightly a pure PoW or PoS implementation is also acheived quite effectively which has been demonstrated on several different blockchains currently in depoyment that the CryptoCoderz team has either developed or assisted with. Later on in early 2020 it was updated again, this time receiving the afermentioned Anti-Stall feature discussed in the introductary part of this document. Again in 2022 the system received a revision upgrade to the Anti-Stall feature which allows the system to gradually target the difficulty lower than a halving step down which is the normal limit. By allowing the system to do this it can achieve a near smooth step down to whatever difficulty is needed to no longer have a block time that is elongated past the set maximum spacing. This prevents the need for a difficulty reset if the chain becomes "stuck" and in most cases prevents hours or days of delay due to this sort of issue as it uses a dynamically increasing curve to target down the longer maximum time was exceeded for a block generation attempt. This also greately helps to mitigate "block pumping" and other attempts to bend the rules of the system in order to generate blocks quicker for a short time.</p>
+
+									<h3>Limitations</h3>
+									<p>Currently the limitations for VRX is that is not yet capable of learning patterns and data sets from previous block history of block generations. Though this isn't a particularly hindering fact it still is something that the CryptoCoderz team has identified that is a weak point being that most reference implementations only have five (5) "check rounds" which is a limited data set. It would be more beneficial to have the system index deeper and learn from the patterns of previous history and use this to make an informed decision on skewing the previously "blind" retarget.</p>
+
+									<h3>Future</h3>
+									<p>In the future VRX will interact with another feature that CryptoCoderz created known as Demi-Nodes which provides the retarget algorithm the ability to interact with the blockchain network and learn from it about how the chain has been generating blocks. This offers a low-overhead solution to having a learning and intelligent network and client that can properly address and predict issues before they arise while snuffing out anything already being attempted such as "block pumping" where miners hit the network with large hashrate to generate blocks at a quicker pace for a short time then back off so that the difficulty is "tricked" into targeting back down again. This is not as problematic for the already sophisticated VRX retarget system but is planned to be completely done away with as of these new upcoming features.</p>
+
+									<h3>Conclusion</h3>
+									<p>Overall this document's intention is provide a general understanding of what VRX is and what it does. The use of the VRX system is still in the grand scheme of things minimally tested and used. Currently you can can find implementations of this system in Espers [ESP], INSaNE [INSANE], Nucleon [NEON], Rubix [RBX], Endox [EDX], DigitalNote [XDN], PupaCoin [PPCN], Konjungate [KONJ], InfoCoin [INFO], Flavor-XL [FXL], ZalemCoin [ZLM], BreadCoin [BREAD] and FrogCoin [FROG] blockchain projects as of the writing of the docmentation. This VRX system will continue to evolve to become more robust and overall a effective solution to the blockchain difficulty retarget problem.</p>
+								</article>
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Recent News</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic02.png" alt="" /></a>
+									<h3><a href="#">In-wallet/client NFTs</a></h3>
+									<p>The first of its kind, true altcoin in-wallet/client NFTs with on-chain pixel data storage and instant from-chain rendering.</p>
+									<ul class="actions">
+										<li><a href="article1.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.png" alt="" /></a>
+									<h3><a href="#">Websites On-Chain</a></h3>
+									<p>Get ready for the future! Espers is excited to test upcoming website on-chain functionality with its community.</p>
+									<ul class="actions">
+										<li><a href="article2.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.png" alt="" /></a>
+									<h3><a href="#">In-wallet/client smart-contracts</a></h3>
+									<p>Go beyond NFTs and Websites, store any data or even build a dApp through unique side-chain smart-contracts.</p>
+									<ul class="actions">
+										<li><a href="article3.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Us</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Have a question that wasn't answered?</h2>
+							<p>
+								Though we encourage everyone to join our Discord we understand that not everyone<br />
+								will, if so then send us a message using the form below or contact information.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														The Espers Project<br />
+														444 S Cactus Junction<br />
+														Mojave, CA, 93501
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://twitter.com/EspersCoin">twitter - @EspersCoin</a><br />
+														<a href="https://www.facebook.com/EspersOfficial/">facebook - EspersOfficial</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">contact@espers.io</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														N/A
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; 2016-2023 The Espers Project</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

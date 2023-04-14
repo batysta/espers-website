@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<!--
+	Espers 
+	html5up.net | @ajlkn
+	espers.io   | @CryptoCoderz
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BVAC - Espers </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Resources</a>
+									<ul>
+										<li>
+											<a href="#">Getting Started</a>
+											<ul>
+												<li><a href="setup.html">Install a Client</a></li>
+												<li><a href="mining.html">Mining coins</a></li>
+												<li><a href="buying.html">Buying coins</a></li>
+												<li><a href="webwallet.html">Web Client</a></li>
+												<li><a href="https://explorer.espers.io/">Block Explorer 1</a></li>
+												<li><a href="https://explorer2.espers.io/">Block Explorer 2</a></li>
+												<li><a href="https://espers.io/download/nodes/node-list.txt">Node list</a></li>
+											</ul>
+										</li>
+										<li><a href="https://github.com/cryptocoderz/espers">Official GitHub</a></li>
+										<li>
+											<a href="#">Exchanges</a>
+											<ul>
+												<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH">Vindax (ESP/ETH)</a></li>
+												<li><a href="https://xeggex.com/market/ESP_USDT">Xeggex (ESP/USDT)</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Pitch-Deck</a>
+											<ul>
+												<li><a href="pdfs/Espers_Pitch_Deck_02182023.pdf">English</a></li>
+												<!-- <li><a href="https://espers.io/download/Espers-Whitepaper-Russian.pdf">Pусский</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Portugues.pdf">Português</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-French.pdf">Français</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Hindi.pdf">हिन्दी</a></li> -->
+											</ul>
+										</li>
+										<li><a href="features.html">Features</a></li>
+										<li><a href="roadmap.html">Roadmap</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Community</a>
+									<ul>
+										<li><a href="https://twitter.com/EspersCoin">Twitter</a></li>
+										<li><a href="https://discord.gg/hhYP8yT">Discord</a></li>
+										<li><a href="https://www.facebook.com/EspersOfficial">Facebook</a></li>
+										<li><a href="https://bitcointalk.org/index.php?topic=1434700.0">Bitcointalk</a></li>
+										<li><a href="https://t.me/EspersCoin">Telegram</a></li>
+										<li><a href="https://www.reddit.com/r/esperscoin">Reddit</a></li>
+										<li><a href="https://www.youtube.com/channel/UCeeQhMjnCKXGQAaKSOJFjng">Youtube</a></li>
+										<li><a href="https://github.com/cryptocoderz/espers">Github</a></li>
+									</ul>
+								</li>
+								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li> -->
+								<li><a href="news.html">News</a></li>
+								<li><a href="https://blog.espers.io/">Dev-Blog</a></li>
+								<li><a href="donations.html">Donations</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">BVAC Page</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Bits Visualized As Color</h2>
+										<p>BVAC data storage system</p>
+									</header>
+									<a href="#" class="image featured">
+										<img src="images/pic01.png" alt="" />
+									</a>
+									<h3>Introduction</h3>
+									<p>Concept: </br>
+									The current version of the BVAC
+									system (as of 4/19/21) represents
+									every possible combination of binary
+									in a file, as color in a photo. For
+									example, the current version has the
+									ability to represent two bits of
+									information for every pixel (We are,
+									as of time of writing, making a third
+									version, which will enable four bits of
+									information to be represented by a
+									single pixel), the way we do this is
+									quite simple, there are only four
+									possible combinations for two bits of
+									binary: 1 1, 1 0, 0 1, 0 0. So we have
+									four colors represent each possible
+									combination of these bits, in our case,
+									red represents 0 1, blue represents 1 0,
+									black represents 1 1, and white
+									represents 0 0. We then tell the wallets
+									of our blockchains to write to a .jpg
+									according to an array which can be
+									located in fractal/fractalbvac.cpp</p>
+									<h3>Evolution</h3>
+									<p>VERSION 3
+									Version Three of this system will involve storing four bits of information per pixel, as
+									some of you reading this may know, the formula for how many possible combinations
+									for an amount of bits, X, is equal to 2^X. For example, say we want to store 1 byte (8
+									bits) per pixel, the equation for how many possible combinations, and by extension how
+									many colors we’d need, is 2^8, which equals 256, so we’d need 256 colors to be able to
+									represent 1 byte per pixel. The reason as to why this is such a challenge for us will be
+									discussed in “Challenges”. Though it is quite difficult to represent 8 bits per pixel, 4 - 6
+									bits is perfectly within our limit. How we do this, is by utilizing RGBA values in place
+									of regular RGB. By setting the absolute value of an alpha value to either 0 or 1, we then
+									double how many colors we can use. For those who don’t know what an alpha value is,
+									it’s the transparency of a color on a scale of 0 – 1. So, the possible combinations of
+									defined as 2^4 = 16:
+									1) 0000
+									2) 0001
+									3) 0010
+									4) 0011
+									5) 0100
+									6) 0101
+									7) 0110
+									8) 0111
+									9) 1000
+									10) 1001
+									11) 1010
+									12) 1011
+									13) 1100
+									14) 1101
+									15) 1110
+ 									16) 1111
+									We then simply assign an RGB value to half of these with their alpha value being 0,
+									then assign the other half with the exact same RGB values, but with an alpha value of 1.</p>
+									<h3>Challenges</h3>
+									<p>
+									The main challenge that we’ve been
+									having to deal with would have to be Blueprint of the third iteration of the BVAC system.
+									the loss of pixel information due to the
+									compression of .jpg images. As a result, we’ve had to stick to absolute values (either the
+									max or minimal value, a value can be) that way it doesn’t get in the way. If we wanted
+									to represent six bits of
+									information per pixel, then
+									we’d have to tie in a “middle
+									value” that isn’t the lowest a
+									value can be, and not the
+									highest a value can be. Then on
+									top of that, we’d have to tie in
+									alpha values as absolute
+									values like we did with
+									versions two and three.
+									If possible we’d like to use a
+									new image format to avoid
+									these issues and possible store
+									as many color combinations as
+									possible to represent as many
+									combinations of bits as
+									possible. However, it seems the .jpg is the most supported image file format, as a result
+									we can’t move to a new image format without the risk of secluding potential members
+									of the community.
+									Next, we will discuss the limits of the technology.</p>
+									<h3>Limits</h3>
+									<p>As we have discussed previously, the formula for how many possible combinations for
+									an array of binary is defined as:
+									2
+									𝑥 = 𝑃𝑜𝑠𝑠𝑖𝑏𝑙𝑒 𝐶𝑜𝑚𝑏𝑖𝑛𝑎𝑡𝑖𝑜𝑛𝑠
+									Where x is equal to how many bits of potential information you want to store. So,first we calculate howThere are three values in an RGB value; Red, Green, and Blue. Each has an absolute
+									value of 255 and a minimal value of 0. Mathematically, we need to account for the lack
+									of color (0) as well, so we use 256 as a “real” interpretation to how many values can be
+									contained within each RGB value.
+									256 x 256 x 256 = 16,777,216.
+									So, we have 16,777,216 possible combinations of RGB values. We then adjust the
+									formula accordingly:
+									2
+									𝑥 = 16,777,216 → 2
+									24 = 16,777,216
+									We have now proven that the maximum number of bits we can represent is 16,777,216
+									without use of Alpha values; However, there are two-hundred-fifty-six possible alpha
+									values for every color, so if we wanted to talk about the max limit of the system with
+									the inclusion of alpha values, we’d adjust the formula so:
+									2
+									𝑥 = (256 ∗ 256 ∗ 256)256;
+									2
+									𝑥 = 4,294,967,296
+									𝑥 =
+									𝑙𝑛(4,294,967,296)
+									𝑙𝑛(2)
+									; 𝑥 = 32
+									For ease of use, we will limit this to 32 bits per pixel. To put into perspective how dense
+									this is, it is 4 bytes per pixel. My resume is 163,840 bits in size (20,480 bytes), we divide
+									that by 4 (because we can store 4 bytes per pixel) and we get 5,120… we find the square
+									root of that, and we get 71.55 x 71.55, we will round that to 72 pixels. So, all we would
+									need is a 72x72 image!
+									</p>
+									<h3>The Future</h3>
+									<p>If one were to first obfuscate or encrypt a data string, convert it to binary, then store it
+									into string that gets stored as pixels, not only would you have a compression method,
+									but an encrypted, compression method, where the
+									data is stored locally in the BVAC code as
+									instructions. This has many applications ranging
+									from a method of block storage for blockchains for
+									additional security (unfortunately, at the probable
+									cost of disk space, at least until the consensus grows
+									wide enough for this to have any actual effect as a
+									compression method) to simply inventorying stuff
+									like lab equipment and chemicals. This could also be
+									used as a method of machine learning, as one could
+									dedicate an AI to crunching and storing information
+									as a BVAC code, both accomplishing educating the
+									AI, and storing the information it has processed.
+									To improve the BVAC system further, one can store
+									the resultants of compression algorithms to a BVAC
+									code, so that they may improve current compression
+									techniques, without having to worry about loss of
+									data. </p>
+								</article>
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Recent News</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic02.png" alt="" /></a>
+									<h3><a href="#">In-wallet/client NFTs</a></h3>
+									<p>The first of its kind, true altcoin in-wallet/client NFTs with on-chain pixel data storage and instant from-chain rendering.</p>
+									<ul class="actions">
+										<li><a href="article1.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.png" alt="" /></a>
+									<h3><a href="#">Websites On-Chain</a></h3>
+									<p>Get ready for the future! Espers is excited to test upcoming website on-chain functionality with its community.</p>
+									<ul class="actions">
+										<li><a href="article2.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.png" alt="" /></a>
+									<h3><a href="#">In-wallet/client smart-contracts</a></h3>
+									<p>Go beyond NFTs and Websites, store any data or even build a dApp through unique side-chain smart-contracts.</p>
+									<ul class="actions">
+										<li><a href="article3.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Us</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Have a question that wasn't answered?</h2>
+							<p>
+								Though we encourage everyone to join our Discord we understand that not everyone<br />
+								will, if so then send us a message using the form below or contact information.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														The Espers Project<br />
+														444 S Cactus Junction<br />
+														Mojave, CA, 93501
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://twitter.com/EspersCoin">twitter - @EspersCoin</a><br />
+														<a href="https://www.facebook.com/EspersOfficial/">facebook - EspersOfficial</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">contact@espers.io</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														N/A
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; 2016-2023 The Espers Project</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

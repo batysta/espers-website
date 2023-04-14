@@ -1,940 +1,316 @@
-﻿<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-
-	<meta charset="utf-8">
-	<title>Espers - Web3 Fractal Engine</title>
-	<meta name="description" content="Espers - Web3 Fractal Engine">
-    <meta name="author" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="google-site-verification" content="V3MRuNnpuN8eoVbPedIDglkLlyvjloUYkGFm-VWLDK8" />
-	
-	<link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-<!--<link rel="manifest" href="/manifest.json">-->
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-
-<!-- start pwa -->
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="application-name" content="Espers">
-<meta name="apple-mobile-web-app-title" content="Espers">
-<meta name="msapplication-starturl" content="/">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-<!-- end pwa -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<!-- Icon fonts -->
-	<link rel="stylesheet" href="libs/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/superfish-master/css/superfish.min.css">
-	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.min.css">
-	<link rel="stylesheet" href="libs/ytp-player/css/jquery.mb.YTPlayer.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
-
-	<!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
-	
-	<!-- Main styles -->
-	<link rel="stylesheet" href="css/main.min.css">
-  <script type="text/javascript" src="//files.coinmarketcap.com/static/widget/currency.js"></script>
-  <meta name="google-site-verification" content="UiHmTz253SrfJhM0dFZOjYa39cj0Kj-0oUXc3-M5EVw" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125953331-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-125953331-1');
-</script>
-
-
-</head>
-
-<body>
-
-	<header  id="top-nav">
-		<div class="container">
-			<div class="row">
-			<!-- Logo -->
-				<a class="logo smooth-scroll" href="/" style="margin-top: -8px"><img src="img/espers-small.png"></a>
-			<!-- Top navigation -->
-								<nav class="top-menu">
-					<ul class="sf-menu clearfix">
-			        <li>
-							<a href="roadmap.html">Roadmap</a>
-						</li>            
-						
-						<li>
-							<a href="#">Whitepaper</a>
-              				<ul>
-								<li><a href="/download/Espers-White-Paper-v1-Final.pdf" download="Espers-White-Paper-v1-Final.pdf">English</a></li>
-								<li><a href="/download/Espers-Whitepaper-Russian.pdf" download="Espers-Whitepaper-Russian.pdf">Pусский</a></li>
-								<li><a href="/download/Espers-Whitepaper-Portugues.pdf" download="Espers-Whitepaper-Portugues.pdf">Português</a></li>
-								<li><a href="/download/Espers-Whitepaper-French.pdf" download="Espers-Whitepaper-French.pdf">Français</a></li>
-								<li><a href="/download/Espers-Whitepaper-Hindi.pdf" download="Espers-Whitepaper-Hindi.pdf">हिन्दी</a></li>
-							</ul>
-						</li>	           						
-						
-						
-						<li>
-							<a href="#">Getting Started</a>
-              <ul>
-								<li><a href="wallet.html">Install a Wallet</a></li>
-								<li><a href="mining.html">How to Mine Coins</a></li>
-								<li><a href="buy-espers.html">How to Buy Coins</a></li>
-								<li><a href="https://wallet.espers.io" target="_blank">Web Wallet</a></li>
-								<li><a href="https://explorer.espers.io" target="_blank">Block Explorer 1</a></li>
-								<li><a href="https://explorer2.espers.io/" target="_blank">Block Explorer 2</a></li>
-								<li><a href="https://espers.io/download/nodes/node-list.txt" target="_blank">Node list for Wallet</a></li>
-		                  				<li><a href="faq.html">FAQ</a></li>   
-			  </ul>
-						</li>
-						<li>
-							<a href="exchanges.html" class="smooth-scroll">Exchanges</a>
-              <ul>
-		      						<li><a href="https://www.exbitron.com/trading/espusdt" target="_blank"> Exbitron (ESP/USDT) </a></li>
-		      						<li><a href="https://www.exbitron.com/trading/espdoge" target="_blank"> Exbitron (ESP/DOGE) </a></li>
-                                				<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH" target="_blank">Vindax (ESP/ETH) </a></li>
-		      						<li><a href="https://btcpop.co/home.php" target="_blank">BTC pop (ESP/BTC)</a></li>
-								<li><a href="https://discord.gg/6ayBP5F" target="_blank">Join Insane Exchange on Discord!</a></li>
-		      </ul> 
-						</li> 
-						<li>	<a href="marketing.html" class="smooth-scroll">Marketing</a>
-              <ul>
-		      						<li><a href="interviews.html" target="_blank"> Interviews </a></li>
-		      						<li><a href="featured.html" target="_blank"> Featured </a></li>
-		      </ul> 
-						</li>        
-						<li>
-							<a href="https://blog.espers.io" target="_blank">Blog</a>
-						</li>
-
-
-						<li>
-							<a href="#">Community</a>
-              <ul>
-                <li><a href="https://twitter.com/EspersCoin" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                <li><a href="https://www.facebook.com/EspersOfficial" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-                <li><a href="https://bitcointalk.org/index.php?topic=1434700.0" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i> BitcoinTalk</a></li>
-                <li><a href="https://discord.gg/hhYP8yT" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> Discord</a></li>
-                <li><a href="https://t.me/EspersCoin" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a></li>
-				<li><a href="https://www.reddit.com/r/esperscoin" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</a></li>
-				<li><a href="https://www.youtube.com/channel/UCeeQhMjnCKXGQAaKSOJFjng" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a></li>
-                <li><a href="https://github.com/cryptocoderz/espers" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
-							</ul>              
-						</li>
-					<li>
-							<a href="funding.html" target=_blank>Donations</a>
-						</li>   
-            
-				</nav>
-
-				<a href="#" class="toggle-mnu">
-					<span></span>
-				</a>
-
-				<div id="mobile-menu">
-					<div class="inner-wrap">
-						<nav>
-            
-							<ul class="nav_menu">							
-              
-            <li>
-							<a href="https://blog.espers.io/" target="_blank">What's New</a>
-						</li>
-						
-				<li>
-							<a href="roadmap.html">Roadmap</a>
-						</li> 
-						        						
-						<li class="menu-item-has-children current-menu-item">
-							<a href="#">Whitepaper</a>
-              				<ul class="sub-menu">
-								<li><a href="/download/Espers-White-Paper-v1-Final.pdf">English</a></li>
-								<li><a href="/download/Espers-Whitepaper-Russian.pdf">Pусский</a></li>
-								<li><a href="/download/Espers-Whitepaper-Portugues.pdf">Português</a></li>
-								<li><a href="/download/Espers-Whitepaper-French.pdf">Français</a></li>
-								<li><a href="/download/Espers-Whitepaper-Hindi.pdf">हिन्दी</a></li>
-								
-							</ul>
-						</li>					
-              
-             <li class="menu-item-has-children current-menu-item">
-							<a href="#">Getting Started</a>
-							              
-              <ul class="sub-menu">
-								<li><a href="wallet.html">Install a Wallet</a></li>
-								<li><a href="mining.html">How to Mine Coins</a></li>
-								<li><a href="buy-espers.html">How to Buy Coins</a></li>
-		                  				<li><a href="faq.html">FAQ</a></li>      
-							</ul>
-
-						</li>
-
-             <li class="menu-item-has-children current-menu-item">
-							<a href="#">Exchanges</a>
-							              
-              <ul class="sub-menu">
-		      						<li><a href="https://www.exbitron.com/trading/espusdt" target="_blank"> Exbitron (ESP/USDT) </a></li>
-		      						<li><a href="https://www.exbitron.com/trading/espdoge" target="_blank"> Exbitron (ESP/DOGE) </a></li>
-                                				<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH" target="_blank">Vindax (ESP/ETH) </a></li>
-		      						<li><a href="https://btcpop.co/home.php" target="_blank">BTC pop (ESP/BTC)</a></li>
-								<li><a href="https://discord.gg/6ayBP5F" target="_blank">Join Insane Exchange on Discord!</a></li>
-</ul>
-
-						</li>            
-            
-	             <li class="menu-item-has-children current-menu-item">
-							<a href="#">Tools</a>
-							              
-              <ul class="sub-menu">
-								<li><a href="https://wallet.espers.io" target="_blank">Web Wallet</a></li>
-								<li><a href="https://explorer.espers.io" target="_blank">Block Explorer 1</a></li>
-								<li><a href="https://explorer2.espers.io/" target="_blank">Block Explorer 2</a></li>
-								<li><a href="https://espers.io/download/nodes/node-list.txt" target="_blank">Node list for Wallet</a></li>
-							</ul>
-
-						</li> 	
-						<li class="menu-item-has-children current-menu-item">
-            						  	<a href="marketing.html" class="smooth-scroll">Marketing</a>
-              <ul class="sub-menu">
-		      						<li><a href="interviews.html" target="_blank"> Interviews </a></li>
-		      						<li><a href="featured.html" target="_blank"> Featured </a></li>
-		      </ul> 
-						</li> 
-	             <li class="menu-item-has-children current-menu-item">
-							<a href="#">Community</a>
-							              
-              <ul class="sub-menu">
-		<li><a href="https://twitter.com/EspersCoin" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                <li><a href="https://www.facebook.com/EspersOfficial/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-                <li><a href="https://bitcointalk.org/index.php?topic=1434700.0" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i> BitcoinTalk</a></li>
-                <li><a href="https://discord.gg/hhYP8yT" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> Discord</a></li>
-                <li><a href="https://t.me/EspersCoin" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a></li>
-		<li><a href="https://www.reddit.com/r/esperscoin/" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</a></li>
-		<li><a href="https://www.youtube.com/channel/UCeeQhMjnCKXGQAaKSOJFjng" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i> Youtube</a></li>
-                <li><a href="https://github.com/cryptocoderz/espers" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
-							</ul>
-
-						</li> 	                    
-    					<li>
-							<a href="funding.html" target="_blank">Donations</a>
-						</li>  
-            
-            </ul>
-						</nav>
-					</div>
-				</div><!-- end mobile menu -->
-			</div>
-		</div>
-	</header>
-<!-- Start Slider section	 -->
-
-	<section class="slider" id="top">
-	<!-- Start Slider container -->
-		<div class="full-slider">
-	
-		<!-- Start Slide item -->
-			<div class="slide bg-image canvas-slide vertical-align" id="large-header" data-image="img/bg-home2.jpg">
-				<div class="container-slide center">
-					<div class="container">
-					<div class="row">
-						<div class="col-md-12 content-mill">
-							<div class="content-slide">
-								<!-- heading title -->
-								<h1 class="heading-title-big">
-									<span>ESPERS</span><br> Web3 Fractal Engine
-								</h1>
-								<!-- horizontal line -->
-								<span class="horizontal-line"><span></span></span>
-								<!-- description slider -->
-								<div class="description">
-									<p>Espers is a blockchain project with the goal of offering secured messaging, websites on the chain and an overall pleasing experience to the user. Our technology is the Web3 Fractal Engine</p>
-								</div>
-							</div>
-								<!-- Download buttons -->
-								<div class="buttons-download">
-									<a href="#download" class="download anim-shadow">
-										<i class="fa fa-download" aria-hidden="true"></i>
-										<span><span>Download an</span>Espers Wallet</span>	
-									</a>
-									<a href="#exchanges" class="downloadright anim-shadow">
-										<span><span>Buy</span>Espers</span>	
-                    <i class="fa fa fa-bar-chart" aria-hidden="true"></i>
-									</a>
-								</div>
-						</div>
-            
-					</div>
-				</div>
-				</div>
-				<canvas id="particles" class="canvas-background"></canvas>
-			</div>
-      
-			<div class="slide bg-image canvas-slide vertical-align" data-image="img/bg-home.jpg">
-				<div class="container-slide right">
-					<div class="container">
-						<div class="row">
-						<!-- mockup iphone -->
-
-							<!-- Content slider -->
-							<div class="col-lg-4 col-md-8 col-sm-8  content-mill">
-								<div class="content-slide">
-									<!-- heading title -->
-									<h1 class="heading-title-big">
-										<span>Mandatory</span><br> Wallet Update
-									</h1>
-									<!-- horizontal line -->
-									<span class="horizontal-line"><span></span></span>
-									<!-- description slider -->
-									<div class="description">
-										<p>Starting March 31th 2022 it is mandatory that you upgrade your wallet to the version 0.8.8.4 in order to avoid any problems.</p>
-									</div>
-								</div>
-								<!-- Download buttons -->
-								<div class="buttons-download">
-									<a href="https://espers.io/wallet.html" class="download anim-shadow">
-										<i class="fa fa-download" aria-hidden="true"></i>
-										<span><span>Download the last </span>Wallet</span>	
-									</a>
-								</div>
-							</div>
-              
-							<div class="col-lg-8 col-md-4 col-sm-4  hidden-xs col-lg-push-1 content-mill">
-								<div class="iphone">
-									<img src="img/wallet.png" alt="iPhone" class="img-responsive">
-								</div>
-							</div>
-              
-						</div>
-					</div>
-				</div>
-			</div>  
-
-		</div>
-		<!-- Strat Control slider -->
-		<div class="control-slider">
-			<!-- Pagiation container -->
-			<div class="dots-control" id="dots-control-full-slider"></div>
-			<!-- Prev - Next -->
-			<div class="prev-next">
-				<div class="prev"><i class="pe-7s-angle-left"></i></div>
-				<div class="next"><i class="pe-7s-angle-right"></i></div>
-			</div>
-		</div>
-	</section>
-
-<!-- Start socialite container -->
-
-	<div class="socialite">
-		<div class="container">
-			<div class="row">
-
-				<div class="container-socialite">
-					<div class="icon-down toBottomFromTop">
-						<a href="#features" class="smooth-scroll">
-							<i class="pe-7s-angle-down"></i>
-						</a>
-					</div>
-				</div>
-<!--
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item">
-					<img src="img/s1.svg" alt="instagram">
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item">
-					<img src="img/s2.svg" alt="facebook">
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item">
-					<img src="img/s3.svg" alt="pinterest">
-				</div>
-
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 item">
-					<img src="img/s4.svg" alt="twitter">
-				</div>
--->
-			</div>
-		</div>
-	</div>
-
-<!-- Start Our Features section	 -->
-
-	<section class="features" id="features">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="heading-title">
-						<h2>Espers Technologies</h2>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-			<!-- Item -->
-				<div class="col-md-3 col-sm-3 col-xs-12 item-icon">
-					<div class="icon-container">
-						<div class="icon icon-circle">
-							<i class="fa fa-connectdevelop"></i>
-						</div>
-					</div>
-					<h3>Blockchain Technology</h3>
-					<p>Blockchain technology has the capabilities to change a variety of things in the world and can also be the backbone of a new internet. One place that blockchain technology has not had an impact on yet is website on the blockchain. However, Espers is trying to change that and is well on their way to doing so.</p>
-				</div>
-			<!-- Item -->
-				<div class="col-md-3 col-sm-3 col-xs-12 item-icon">
-					<div class="icon-container">
-						<div class="icon icon-circle">
-							<i class="fa fa-users"></i>
-						</div>
-					</div>
-					<h3>Website on the Chain</h3>
-					<p>Espers Blockchain will keep sites extremely safe and will make them virtually impenetrable, which is creating a new standard for website safety and security. In addition to the security improvements, Espers Blockchain will also ensure that your website is never taken down or removed, no matter what. You will also have complete control of your data, and the sites will feature faster server times.</p>
-				</div>        
-			<!-- Item -->
-				<div class="col-md-3 col-sm-3 col-xs-12 item-icon">
-					<div class="icon-container">
-						<div class="icon icon-circle">
-							<i class="fa fa-envelope"></i>
-						</div>
-					</div>
-					<h3>Secured Messaging</h3>
-					<p>Beyond merely including text as the content of a message, Espers’ messaging system is also designed to process and distribute everything from basic images to compressed files and documents allowing its users to go beyond standard text-only limitation. To accomplish the previously mentioned Side-chain system and cross-chain interface is used.</p>
-				</div>
-			<!-- Item -->
-				<div class="col-md-3 col-sm-3 col-xs-12 item-icon">
-					<div class="icon-container">
-						<div class="icon icon-circle">
-							<i class="fa fa-connectdevelop"></i>
-						</div>
-					</div>
-					<h3>Web3 Fractal Engine</h3>
-					<p>A completely new technology which will enhance our blockchain even further! We will soon post more details about this.</p>
-				</div>
-
-
-			</div>
-		</div>
-	</section>
-  
-  
-<!-- Start Screenshots Section -->
-
-	<section class="screenshots">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-push-2">
-					<div class="heading-title">
-						<h2>Espers Team</h2>
-            <p>A perfect blend of creativity and development wizardry.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-
-					
-					<!-- Start Block item -->
-						<div class="col-md-12">
-
-								<img src="img/team-v5.png" alt="Espers Team" class="img-responsive">
-						</div>
-
-		</div>
-	</section>
-  
-
-<!-- Start Video PopUp section	
-
-	<section class="video-popup bg-mask">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-push-1">
-					<a href="https://www.youtube.com/watch?v=lm4OJxGQm_E" class="icon-play anim-shadow">
-						<i class="pe-7s-play"></i>
-					</a>
-					<h2 class="heading-title-big">Crafted with love to technical excellence and exceptional attention to detail.</h2>
-				</div>
-			</div>
-		</div>
-	</section>
- -->
- 
-  
-
- 
-<!-- Start Our Services section	 -->
-
-	<section class="services" id="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-push-2">
-					<div class="heading-title">
-						<h2>A few things we’re great at</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-    
-	<!-- Start items-->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-6">
-				<div class="items-right">
-					<div class="section-class-item">
-						<div class="item-text text-left">
-							<h3 align="center">SITE-ON-CHAIN</h3>
-							<p align="justify">Espers project proposes that websites and other internet related services be operated/stored/hosted through the blockchain. Going further than merely adding a layer of security, a blockchain operated website has no possibility of suffering from a DDOS attack, as there are no servers or datacenters to compromise, no files to “hack”, no hosting to worry about, no domain headaches, no storage concerns, no data to intercept, and so on.</p>
-						</div>
-						<!--<div class="item-icon text-left">
-							<span class="icon-wrap icon-services"><i class="fa fa-cloud-download"></i></span>
-						</div>-->
-					</div>
-				</div><!-- end items-right -->
-			</div>
-
-			<!-- Iphone cection -->
-			<div class="col-md-4 col-sm-6">
-				<div class="section-class-image text-center">
-					<img class="inamauee" src="img/roadmap3.jpg" style="padding-top: 40px;" width="390">
-				</div>
-			</div> 
-			<!-- End Iphone cection -->
-			<div class="col-md-4 col-sm-6">
-				<div class="items-left">
-				<!-- Item section -->
-					<div class="section-class-item">
-						
-						<!--<div class="item-icon text-right" style="padding-right: 10px; padding-top: 100px;">
-							<span class="icon-wrap icon-services"><i class="fa fa-code"></i></span>
-						</div>-->
-
-						<div class="item-text text-right">
-							<h3 align="center">CHAIN APPS</h3>
-							<p align="justify">As the Espers blockchain system is designed to use sidechains and modular features the “Chain Apps” pertains to the project’s ability to plug any kind of blockchain operated application into itself and grow in capabilities. Some of these Chain Apps come from X-Node voted features while others are from 3rd parties verified prior to implementation into the system.</p>
-						</div>
-
-					</div>
-				<!-- End Item section -->
-				</div>
-			</div>
-		</div>
-	</div>
-
-  <!-- Start items -->
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-4 col-sm-6">
-					<div class="items-right">
-					<!-- Item section -->
-						<div class="section-class-item" style="padding-top: 10px;">
-
-							<div class="item-text text-left">
-								<h3 align="center">Velocity Blockchain Constraint System</h3>
-								<p align="justify">The issue of possibly exploiting parameters is resolved by the Velocity system being a "triple check". Even after a block during generation has seemingly met all requirements and is then generated it is now no longer simply accepted. Thus this system secures the chain, making it more stable, predictable, and overall reliable, instilling confidence that the blocks that are accepted are indeed blocks that are proper. <a href="https://espers.io/download/Espers-White-Paper-v1-Final.pdf" target="_blank">Read More</a></p>
-							</div>
-							<!-- Start items -->
-							<!--<div class="item-icon text-left">
-								<span class="icon-wrap icon-services"><i class="fa fa-bolt"></i></span>
-							</div> -->
-					<!-- End Item section -->
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-md-push-4">
-					<div class="items-left">
-					<!-- Item section -->
-						<div class="section-class-item" style="padding-top: 10px;">
-									
-							<!--<div class="item-icon text-right" style="padding-right: 10px; padding-top: 100px;">
-								<span class="icon-wrap icon-services"><i class="fa fa-gears"></i></span>
-							</div>-->
-
-							<div class="item-text text-right">
-								<h3 align="center">X-NODES</h3>
-								<p align="justify">X-Nodes are completely opt-in meaning that any community member may participate in the system regardless of their current balance or previous experience. This ensures that the decentralization aspect of the Espers project and blockchains in general is not lost once again strengthening the overall network.</p>
-							</div>
-
-						</div>
-					<!-- End Item section -->
-					</div>
-				</div>
-
-			</div>
-		</div>
-    
-<!-- Start items -->
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-4 col-sm-6">
-					<div class="items-right">
-					<!-- Item section -->
-						<div class="section-class-item" style="padding-top: 10px;">
-
-							<div class="item-text text-left">
-								<h3 align="center">Secure Messaging</h3>
-								<p align="justify">To ensure speedy delivery, the message doesn’t actually affix itself to the blockchain but rather to a private key where the message contents are sent and from which they can be read. Allowing for very fast relays of messages without the need to add load to the blockchain network is a clever solution. However, a proper implementation of secure messaging would need to broadcast the messages across nodes through the blockchain itself, just as a mined block would normally do.</p>
-							</div>
-								
-							<!--<div class="item-icon text-left">
-								<span class="icon-wrap icon-services"><i class="fa fa-envelope"></i></span>
-							</div>-->
-					<!-- End Item section -->
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-6 col-md-push-4">
-					<div class="items-left">
-					<!-- Item section -->
-						<div class="section-class-item" style="padding-top: 10px;">
-
-							<!--<div class="item-icon text-right" style="padding-right: 10px; padding-top: 130px;">
-								<span class="icon-wrap icon-services"><i class="fa fa-crosshairs"></i></span>
-							</div>-->
-
-							<div class="item-text text-right">
-								<h3 align="center">Terminal Velocity RateX “VRX”</h3>
-								<p align="justify">VRX or Terminal Velocity RateX is a blockchain difficulty retarget system that, using a several block depth scan, quickly adapts the implemented blockchain/altcoin's mining or staking difficulty levels to ensure a narrow window around the desired block time. VRX system ensures that blocks are generated at a consistently even pace. Furthermore for Hybrid blockchains the blocks are properly shuffled in a 50/50 ratio allowing both consensus types an even chance. <a href="https://espers.io/download/Espers-White-Paper-v1-Final.pdf" target="_blank">Read More</a></p>
-							</div>
-
-						</div>
-					<!-- End Item section -->
-					</div>
-				</div>
-
-			</div>
-		</div>
-    
-	<!-- End items -->	
-	</section>  
-  
-
-
-<!-- Start FAQ Section -->
-
-	<section class="faq white-color bg-mask" id="faq">
-		<div class="container">
-  
-			<div class="row">
-				<div class="col-md-6">
-					<div class="heading-title text-left">
-						<h2>Need some help?</h2>
-						<p>Instructions on how to setup the Espers wallets can be found <a href="https://blog.espers.io/getting-espers-wallet-and-setting-it-up-1ac91c0bfd21">here</a>.<br /> If you have problems setting up your wallet feel free to get in touch. We highly recommend you to join our <a href="https://discord.gg/hhYP8yT" target="_blank">Discord</a> server.</p>
-            <p style="margin-bottom: 30px;">We have also listed our most common question here but if you want more information please follow the link below</p>
-            <a href="faq.html" class="btn btn-blue">Read More</a>
-					</div>
-				</div>
-
-			<!-- Accordion block -->
-				<div class="col-md-6">
-					<div id="accordion" class="accordion">
-            <h3>Where can i buy some Espers</h3>
-						<div>
-							<p>You can purchase Espers from following exchanges:
-						<div>            
-              <br />
-		      						<li><a href="https://www.exbitron.com/trading/espusdt" target="_blank"> Exbitron (ESP/USDT) </a></li>
-		      						<li><a href="https://www.exbitron.com/trading/espdoge" target="_blank"> Exbitron (ESP/DOGE) </a></li>
-                                				<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH" target="_blank">Vindax (ESP/ETH) </a></li>
-		      						<li><a href="https://btcpop.co/home.php" target="_blank">BTC pop (ESP/BTC)</a></li>
-								<li><a href="https://discord.gg/6ayBP5F" target="_blank">Join Insane Exchange on Discord!</a></li>
-          					</p>
-						</div></p>
-						</div>
-
-            <h3>How do i install a wallet</h3>
-						<div>
-							<p>Instructions on how to setup the Espers wallets can be found <a href="https://blog.espers.io/getting-espers-wallet-and-setting-it-up-1ac91c0bfd21">here</a>. If you have problems setting up your wallet feel free to get in touch. We highly recommend you to join our <a href="https://discord.gg/hhYP8yT" target="_blank">Discord</a> server.</p>
-						</div>
-
-						<h3>Synchronisation is slow / I have a low amount of active connections.</h3>
-						<div>
-							 <p>If you're having a low amount of active connections, try adding nodes from the nodes list to your configuration file. A list of current nodes can be found
-                  <a href="https://espers.io/download/nodes/node-list.txt" target="_blank">here</a>. <br /><br />
-                  
-                    <small>
-                                On Windows, the configuration file can be found at <code>C:\Users\(your-username)\AppData\Roaming\ESP\Espers.conf</code>.<br><br />
-                               On Mac OS it's located at <code>/Users/(your-username)/Library/Application Support/ESP/Espers.conf</code>.
-                    </small>
-                    
-                  </p>
-
-
-						</div>
-
-					<h3>How do i stake my coins</h3>
-						<div>
-							<p>Your Epsers needs to mature in your wallet approx 2 hours before they can start staking.<br />You can have your wallet encrypted, but it needs to be unlocked. You can do this from settings.
-						Wallet needs to stay open and connected.</p>
-						</div>
-            
-					<h3>How can i mine some Espers</h3>
-						<div>
-							<p>You can find instructions to setup your computer to mine Espers <a href="https://blog.espers.io/espers-mining-guide-522e46a6717d" target="_blank">here</a></p>.
-						</div>
-
-            
-					</div>
-				</div>
-			<!-- End Accordion block -->
-			</div>
-		</div>
-	</section>
-
-<!-- Start What Did You Recieve Section -->
-
-	<section class="what-did" id="exchanges">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<div class="iphones-section">
-						<div class="iphones">
-              <div class="left-mob-front" style="width: 50%; margin: 0 auto; margin-top: 25%; background-color: #ffff;">
-			<div class="coinmarketcap-currency-widget" data-currencyid="1238" data-base="USD" data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>
-              </div>
-              <img class="right-mob-back img-responsive" src="img/trading.png" alt="iphone">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="heading-title text-left">
-						<h2>Where can I buy Espers ?</h2>
-						<p>Espers coins can be acquired on different exchanges, you'll need to register on one of the exchanges below and purchase Espers coin with your prefered currency.</p>
-					</div>
-
-				<!-- Block item -->
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Espers </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Video -->
+					<video autoplay muted loop id="bnrVideo">
+  						<source src="images/banner.mp4" type="video/mp4">
+					</video>
+
+					<!-- Logo -->
+						<div id="logo">
 							
-							<div class="item-text text-left">
-								<p><a href="https://www.exbitron.com/trading/espusdt" target="_blank"> Exbitron (ESP/USDT) </a></p>
-							</div>
 						</div>
-					</div>	
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
-							<div class="item-text text-left">
-								<p><a href="https://www.exbitron.com/trading/espdoge" target="_blank"> Exbitron (ESP/DOGE) </a></p>
-							</div>
-						</div>
-					</div>
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
-							<div class="item-text text-left">
-								<p><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH" target="_blank">Vindax (ESP/ETH) </a></p>
-							</div>
-						</div>
-					</div>
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
-							<div class="item-text text-left">
-		      						<p><a href="https://btcpop.co/home.php" target="_blank">BTC pop (ESP/BTC)</a></p>
-							</div>
-						</div>
-					</div>
-				<!-- Block item -->
-					<!-- Accordion block 
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
-							<div class="item-text text-left">
-								<p><a href="https://cryptohub.online/market/ESP/" target="_blank">Cryptohub</a></p>
-							</div>
-						</div>
-					</div>  -->
-					<div class="section-icon-text text-with-icon">
-						<div class="section-class-item">
-							<div class="item-icon">
-								<span class="icon-wrap"><i class="pe-7s-check"></i></span>
-							</div>
-							<div class="item-text text-left">
-								<p><a href="https://discord.gg/6ayBP5F" target="_blank">Join Insane Exchange on Discord!</a></p>
-							</div>
-						</div>
-					</div>  
-          
-				</div>
-			</div>
-		</div>
-	</section>
 
-<!-- Start Downloads Section -->
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Resources</a>
+									<ul>
+										<li>
+											<a href="#">Getting Started</a>
+											<ul>
+												<li><a href="setup.html">Install a Client</a></li>
+												<li><a href="mining.html">Mining coins</a></li>
+												<li><a href="buying.html">Buying coins</a></li>
+												<li><a href="webwallet.html">Web Client</a></li>
+												<li><a href="https://explorer.espers.io/">Block Explorer 1</a></li>
+												<li><a href="https://explorer2.espers.io/">Block Explorer 2</a></li>
+												<li><a href="https://espers.io/download/nodes/node-list.txt">Node list</a></li>
+											</ul>
+										</li>
+										<li><a href="https://github.com/cryptocoderz/espers">Official GitHub</a></li>
+										<li>
+											<a href="#">Exchanges</a>
+											<ul>
+												<li><a href="https://vindax.com/exchange-base.html?symbol=ESP_ETH">Vindax (ESP/ETH)</a></li>
+												<li><a href="https://xeggex.com/market/ESP_USDT">Xeggex (ESP/USDT)</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Pitch-Deck</a>
+											<ul>
+												<li><a href="pdfs/Espers_Pitch_Deck_02182023.pdf">English</a></li>
+												<!-- <li><a href="https://espers.io/download/Espers-Whitepaper-Russian.pdf">Pусский</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Portugues.pdf">Português</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-French.pdf">Français</a></li>
+												<li><a href="https://espers.io/download/Espers-Whitepaper-Hindi.pdf">हिन्दी</a></li> -->
+											</ul>
+										</li>
+										<li><a href="features.html">Features</a></li>
+										<li><a href="roadmap.html">Roadmap</a></li>
+										<li><a href="faq.html">FAQ</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Community</a>
+									<ul>
+										<li><a href="https://twitter.com/EspersCoin">Twitter</a></li>
+										<li><a href="https://discord.gg/hhYP8yT">Discord</a></li>
+										<li><a href="https://www.facebook.com/EspersOfficial">Facebook</a></li>
+										<li><a href="https://bitcointalk.org/index.php?topic=1434700.0">Bitcointalk</a></li>
+										<li><a href="https://t.me/EspersCoin">Telegram</a></li>
+										<li><a href="https://www.reddit.com/r/esperscoin">Reddit</a></li>
+										<li><a href="https://www.youtube.com/channel/UCeeQhMjnCKXGQAaKSOJFjng">Youtube</a></li>
+										<li><a href="https://github.com/cryptocoderz/espers">Github</a></li>
+									</ul>
+								</li>
+								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li> -->
+								<li><a href="news.html">News</a></li>
+								<li><a href="https://blog.espers.io/">Dev-Blog</a></li>
+								<li><a href="donations.html">Donations</a></li>
+							</ul>
+						</nav>
 
-	<section class="downloads bg-mask white-color" id="download">
+				</section>
 
-
-	<!-- Download section -->
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-push-2">
-					<div class="heading-title">
-						<h2>Download Espers wallet</h2>
-            <p>Instructions on how to setup the Espers wallets can be found <a href="https://blog.espers.io/getting-espers-wallet-and-setting-it-up-1ac91c0bfd21">here</a>.<br /> If you have problems setting up your wallet, feel free to get in touch.<br /> We highly recommend you to join our <a href="https://discord.gg/hhYP8yT" target="_blank">Discord</a> server.</p>
-			<p style="margin-top: 30px;">GUIDE ON HOW TO FIX YOUR WALLET WITH THE LATEST SNAPSHOT CAN BE FOUND <a href="https://blog.espers.io/using-the-snapshot-d8eb6d1cb3f6" style="text-decoration: uppercase;">HERE</a>.</p>
-					</div>
-				</div>
-				<div class="col-md-12">
-					
-					<div class="buttons-download text-center">
-					
-						
-						
-						<a href="https://github.com/CryptoCoderz/Espers/releases" title="Latest Release" class="download anim-shadow">
-							<i class="fa fa-windows" aria-hidden="true"></i>
-							<span><span>Download wallet for</span>Windows/Mac OS</span>
-							<i class="fa fa-apple" aria-hidden="true"></i>	
-						</a>
-									
-						<a href="https://wallet.espers.io" class="download anim-shadow">
-							<i class="fa fa-globe" aria-hidden="true"></i>
-							<span><span>Use the </span>Web Wallet</span>	
-						</a>
-
-						<a href="https://blog.espers.io/getting-espers-wallet-and-setting-it-up-1ac91c0bfd21" class="download anim-shadow">
-							<i class="fa fa-linux" aria-hidden="true"></i>
-							<span><span>View Instruction for</span>Linux</span>	
-						</a>
-					
-						<a href="https://github.com/cryptocoderz/espers" class="download anim-shadow">
-							<i class="fa fa-github" aria-hidden="true"></i>
-							<span><span>Source</span>Github</span>	
-						</a>         
-					</div>
-				</div>
-    </div>
-    <!--
-    <div class="row" style="margin-top: 40px;">        
-				<div class="col-md-8 col-md-push-2">
-					<div class="buttons-download text-center">
-					
-						<a href="#" class="download anim-shadow">
-							<i class="fa fa-question" aria-hidden="true"></i>
-							<span><span>Everything you need to know</span>Learn More</span>	
-						</a>
-					</div>
-				</div>        
-			</div>
-      -->
-      </div>
-</section>
-
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="heading-title" style="text-align: center;">
-            <div style="width: 200px; display: block; margin: auto;">
-						<img src="img/espers-small.png"><a class="logo smooth-scroll" href="/"></a></img>
-						</div>
-					</div>
-					<div class="social-inons">
-						<ul>
-							<li class="icon-circle" ><a href="https://twitter.com/EspersCoin"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              						<li class="icon-circle" ><a href="https://www.facebook.com/EspersOfficial/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li class="icon-circle" ><a href="https://bitcointalk.org/index.php?topic=1434700.0"><i class="fa fa-commenting" aria-hidden="true"></i></a></li>
-							<li class="icon-circle" ><a href="https://discord.gg/yJ8CtvM"><i class="fa fa-users" aria-hidden="true"></i></a></li>
-							<li class="icon-circle" ><a href="https://t.me/EspersCoin"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-							<li class="icon-circle" ><a href="https://github.com/cryptocoderz/espers"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<!-- Intro -->
+				<section id="intro" class="wrapper style1">
+					<div class="title">Welcome!</div>
+					<div class="container">
+						<!-- <p class="style1">What is Espers?</p> -->
+						<p class="style2">
+							Espers, a Revolutionary Hybrid PoW/PoS Layer-1 Blockchain with Unlimited Scalability
+						</p>
+						<p class="style3">With a unique <strong>NFT</strong>, and <strong>Smart-Contract</strong> system built on the <strong>Espers Blockchain</strong> and powered by the <strong>Web3 Fractal Engine</strong>. We are an active community that encourages new users to <a href="https://discord.gg/cn3AfPS">join our Discord</a>, it's free and get's you plugged in with the Team/Community members.</p>
+						<ul class="actions">
+							<li><a href="https://discord.gg/cn3AfPS" class="button style3 large">Join Espers Community</a></li>
 						</ul>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="bottom-footer white-color">
-					<div class="col-md-4">
-						<div class="footer-copyright">
-							<p>Espers.io &copy; <?php echo date("Y"); ?> All Rights Reserved. </p>
-						</div>	
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="wrapper style2">
+					<div class="title">Features</div>
+					<div class="container">
+
+						<!-- Image -->
+							<a href="#" class="image featured">
+								<img src="images/pic01.png" alt="" />
+							</a>
+
+						<!-- Features -->
+							<section id="features">
+								<header class="style1">
+									<h2>We offer a host of unique features and capabilities</h2>
+									<p>Below are just some of the many abilities and resources available to our community</p>
+								</header>
+								<div class="feature-list">
+									<div class="row">
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico"></section>
+												<h3>Encrypted Messaging</h3>
+												<p>One of many capabilties of the Fractal system is offering the ability to transmit any kind of data, this extends to messaging and social media possibilties!</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico2"></section>
+												<h3>Demi-nodes</h3>
+												<p>We take security to the next level with intelligent network structures that can adapt and make informed decisions on block security/acceptance. Welcome to Demi-nodes.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico3"></section>
+												<h3>In-chain NFTs</h3>
+												<p>Have peace of mind when using the Espers platform, NFT pixel data itself is stored in-chain, negating the need for insecure IPFS hosting.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico4"></section>
+												<h3>Bits Visualized As Color (BVAC)</h3>
+												<p>Store and reference data more easily with BVAC. Similar to a barcode, BVAC allows the Espers client to read and store data in an image instead of the hassle of processing large text.</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico5"></section>
+												<h3>Websites On-chain</h3>
+												<p>Stay secure and immutable by hosting your website on the Espers network. Leading the way in a revolutionary concept of storing and accessing websites directly on-chain!</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-medium">
+											<section>
+												<section class="ico6"></section>
+												<h3>Web3 Fractal Engine</h3>
+												<p>The worlds first and most powerful Bitcoin based dynamic multi-chain smart-contract engine. Providing unique on-chain data storage and hosting for the Web3 world we live in!</p>
+											</section>
+										</div>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><a href="setup.html" class="button style1 large">Get Started</a></li>
+									<li><a href="features.html" class="button style2 large">More Info</a></li>
+								</ul>
+							</section>
+
 					</div>
-					<div class="col-md-8">
-					<!-- Bottom nav -->
-						<div class="footer-menu">
+				</section>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Recent News</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="article1.html" class="image featured"><img src="images/pic02.png" alt="" /></a>
+									<h3><a href="article1.html">In-wallet/client NFTs</a></h3>
+									<p>The first of its kind, true altcoin in-wallet/client NFTs with on-chain pixel data storage and instant from-chain rendering.</p>
+									<ul class="actions">
+										<li><a href="article1.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="article2.html" class="image featured"><img src="images/pic03.png" alt="" /></a>
+									<h3><a href="article2.html">Websites On-Chain</a></h3>
+									<p>Get ready for the future! Espers is excited to test upcoming website on-chain functionality with its community.</p>
+									<ul class="actions">
+										<li><a href="article2.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="article3.html" class="image featured"><img src="images/pic04.png" alt="" /></a>
+									<h3><a href="article3.html">In-wallet/client smart-contracts</a></h3>
+									<p>Go beyond NFTs and Websites, store any data or even build a dApp through unique side-chain smart-contracts.</p>
+									<ul class="actions">
+										<li><a href="article3.html" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Us</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Have a question that wasn't answered?</h2>
+							<p>
+								Though we encourage everyone to join our Discord we understand that not everyone<br />
+								will, if so then send us a message using the form below or contact information.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														The Espers Project<br />
+														444 S Cactus Junction<br />
+														Mojave, CA, 93501
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://twitter.com/EspersCoin">twitter - @EspersCoin</a><br />
+														<a href="https://www.facebook.com/EspersOfficial/">facebook - EspersOfficial</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">contact@espers.io</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														N/A
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
 							<ul>
-								<li><a href="/">Home</a></li>
-                <li><a href="https://blog.espers.io/" target="_blank">What's new</a></li>
-								<li><a href="buy-espers.html">Exchanges</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="https://explorer.espers.io/">Block Explorer</a></li>
-		<li><a href="https://explorer2.espers.io/">Block Explorer 2</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+								<li>&copy; 2016-2023 The Espers Project</li>
 							</ul>
 						</div>
-					<!-- End Bottom nav -->	
 					</div>
-				</div>
-			</div>
+				</section>
+
 		</div>
-	</footer>
-	
-	<!-- Scroll to top -->
-	<div class="top icon-down toTopFromBottom">
-        <a href="#top" class="smooth-scroll"><i class="pe-7s-angle-up"></i></a>
-    </div>
-    <!-- End Scroll to top -->
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-	
-	<!-- GOOGLE MAP -->
-<!--	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfIvcRb39yOu1OFOX2G0c4jemKpLgpJl0&sensor=false"></script>-->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-	<!-- LIBS -->
-	<script src="libs/jquery/jquery-3.5.0.min.js"></script>
-	<script src="js/libs.js" ></script>
-
-	<!-- Use scripts -->
-	<script src="js/common.min.js"></script>
-  
-</body>
-<!-- service worker 
-	<script>
- if ('serviceWorker' in navigator) {
-    console.log("Will the service worker register?");
-    navigator.serviceWorker.register('service-worker.js')
-      .then(function(reg){
-        console.log("Yes, it did.");
-     }).catch(function(err) {
-        console.log("No it didn't. This happened:", err)
-    });
- }
-</script> -->
+	</body>
 </html>
