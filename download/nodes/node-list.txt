@@ -1,3 +1,13 @@
+addnode=n1.espers.io:22448
+addnode=n2.espers.io:22448
+addnode=n3.espers.io:22448
+addnode=n4.espers.io:22448
+addnode=n5.espers.io:22448
+addnode=n6.espers.io:22448
+addnode=n7.espers.io:22448
+addnode=n8.espers.io:22448
+addnode=n9.espers.io:22448
+addnode=n10.espers.io:22448
 addnode=n1.espers.io
 addnode=n2.espers.io
 addnode=n3.espers.io
