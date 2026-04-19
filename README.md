@@ -1,4 +1,4 @@
-Espers.io - Official Espers Project Website - 2019-2025
+Espers.io - Official Espers Project Website - 2019-2026
 ===========================================================================================
 
 ### Live Site:
